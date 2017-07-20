@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sa-wv-4rb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHw-dl-36T">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="5Qi-b0-bye">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCP-Ry-hUw">
+                                    <rect key="frame" x="15" y="15" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="H4P-Oy-FTZ"/>
+                                        <constraint firstAttribute="width" constant="30" id="qhe-0V-PTa"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsQ-Wl-zlF">
+                                    <rect key="frame" x="330" y="15" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="ixk-bs-KHB"/>
+                                        <constraint firstAttribute="height" constant="30" id="mlD-rI-CTh"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="FsQ-Wl-zlF" secondAttribute="trailing" constant="15" id="5Wb-u2-S0i"/>
+                                <constraint firstAttribute="height" constant="60" id="H2F-QW-HqV"/>
+                                <constraint firstItem="5Qi-b0-bye" firstAttribute="leading" secondItem="eHw-dl-36T" secondAttribute="leading" id="M9W-6n-usn"/>
+                                <constraint firstItem="5Qi-b0-bye" firstAttribute="top" secondItem="eHw-dl-36T" secondAttribute="top" id="RaN-Ll-Vk2"/>
+                                <constraint firstItem="FsQ-Wl-zlF" firstAttribute="top" secondItem="eHw-dl-36T" secondAttribute="top" constant="15" id="S8p-WK-US3"/>
+                                <constraint firstItem="aCP-Ry-hUw" firstAttribute="leading" secondItem="eHw-dl-36T" secondAttribute="leading" constant="15" id="bPT-pU-mQ1"/>
+                                <constraint firstItem="aCP-Ry-hUw" firstAttribute="top" secondItem="eHw-dl-36T" secondAttribute="top" constant="15" id="jhQ-nX-81C"/>
+                                <constraint firstAttribute="bottom" secondItem="5Qi-b0-bye" secondAttribute="bottom" id="pd1-Ey-4As"/>
+                                <constraint firstAttribute="trailing" secondItem="5Qi-b0-bye" secondAttribute="trailing" id="xjK-gD-5yj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.19529567940000001" green="1" blue="0.95173173740000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1sa-wv-4rb" secondAttribute="height" multiplier="4:3" id="2pc-ws-Jr1"/>
+                        <constraint firstItem="eHw-dl-36T" firstAttribute="top" secondItem="1sa-wv-4rb" secondAttribute="top" id="Gho-Do-ghs"/>
+                        <constraint firstAttribute="trailing" secondItem="eHw-dl-36T" secondAttribute="trailing" id="hUl-DD-eua"/>
+                        <constraint firstItem="eHw-dl-36T" firstAttribute="leading" secondItem="1sa-wv-4rb" secondAttribute="leading" id="xXo-Ju-1b1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NA8-ad-k7r">
+                    <rect key="frame" x="0.0" y="281.5" width="375" height="385.5"/>
+                    <color key="backgroundColor" red="0.094117647060000004" green="0.67843137249999996" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NA8-ad-k7r" secondAttribute="trailing" id="4HQ-3B-Hpc"/>
+                <constraint firstItem="NA8-ad-k7r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7a2-2V-dOc"/>
+                <constraint firstAttribute="bottom" secondItem="NA8-ad-k7r" secondAttribute="bottom" id="SKL-Mm-vwM"/>
+                <constraint firstAttribute="trailing" secondItem="1sa-wv-4rb" secondAttribute="trailing" id="VUs-ox-vY9"/>
+                <constraint firstItem="NA8-ad-k7r" firstAttribute="top" secondItem="1sa-wv-4rb" secondAttribute="bottom" id="aMp-aO-ZfF"/>
+                <constraint firstItem="1sa-wv-4rb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kKN-IW-1AT"/>
+                <constraint firstItem="1sa-wv-4rb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tuw-1U-LXP"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="NA8-ad-k7r"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="1sa-wv-4rb"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="1sa-wv-4rb"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="1sa-wv-4rb"/>
+                    <include reference="NA8-ad-k7r"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackGround" width="375" height="60"/>
+    </resources>
+</document>
